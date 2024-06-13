@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* s;ide */
+body{
+  font-size: 1rem;
+  /* background-repeat: no-repeat; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+  
+
+
+
+  /* Navbar.css */
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.navbar-slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+.navbar-slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+
+
+/* section1 box */
+
+
+.relative {
+  position: relative;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.transition-transform {
+  transition-property: transform;
+}
+.transition-background-color {
+  transition-property: background-color;
+}
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+
+
+.relative:hover .box{
+  background-color: rgb(158, 208, 98);
+  color: #000000 !important;
+} 
+ 
+
+/* section2 box */
+.group:hover .thumbs-up {
+  opacity: 1;
+  animation: moveUp 1s forwards;
+}
+
+.thumbs-up {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
 }
