@@ -10,23 +10,26 @@ import Magazine from './Pages/Magazine'
 import Publication from './Pages/Publication'
 import Cart from './Pages/Cart';
 import Cart2 from './Pages/Cart2';
+import Cart3 from './Pages/Cart3';
+
 
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/login" element={<Login />} />
-    //     <Route path="/newspaper" element={<NewsPaper />} />
-    //     <Route path="/magazine" element={<Magazine />} />
-    //     <Route path="/publication" element={<Publication />} />
-    //   </Routes>
-    // </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/newspaper" element={<NewsPaper />} />
+        <Route path="/magazine" element={<Magazine />} />
+        <Route path="/publication" element={<Publication />} />
+      </Routes>
+    </Router>
 
-    <>
-    <Cart/>
-    </>
+
+   
+
+  
   
   );
 }

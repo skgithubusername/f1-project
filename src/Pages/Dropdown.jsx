@@ -26,7 +26,7 @@ const Dropdown = () => {
           onClick={toggleDropdown}
           style={{ width: isOpen ? 'calc(100% + 1px)' : '100%' }}
         >
-          {selectedOption ? selectedOption : 'Select an option'}
+          {selectedOption ? selectedOption : 'Select option'}
           <svg
             className="-mr-1 ml-2 h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -63,29 +63,6 @@ const Dropdown = () => {
 };
 
 export default Dropdown;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
