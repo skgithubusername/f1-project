@@ -6,7 +6,7 @@ import img1 from "../img/Ellipse 5.png";
 
 const Section2 = () => {
   return (
-    <div className="flex flex-col mx-8 mt-40 justify-center items-center">
+    <div className="flex flex-col mx-8 mt-16 mb-16 justify-center items-center">
       <h1 className="font-semibold   text-xl mb-10">Customers</h1>
 
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start text-center    w-full">

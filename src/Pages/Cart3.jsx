@@ -1,4 +1,4 @@
-// cart3
+// after cart - payment section
 
 
 
@@ -27,9 +27,9 @@ function Cart3() {
             </li>
             <li className="flex items-center text-gray-400">
               <span className="mr-2">
-                <GoCircle className="text-gray-400" />
+                <GoCircle className="text-red-500" />
               </span>
-              <span>Checkout</span>
+              <span className="font-semibold text-red-500">Checkout</span>
             </li>
             <li className="flex items-center text-gray-400">
               <span className="mr-2">
@@ -124,3 +124,41 @@ function Cart3() {
 }
 
 export default Cart3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

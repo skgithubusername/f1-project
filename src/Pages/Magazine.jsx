@@ -1,19 +1,28 @@
+// magazine
+import { IoMdCart } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
-
-
-import Dropdown from './Dropdown';
+import React, { useState } from 'react';
 import img1 from '../img/Rectangle 23 (1).png';
 import Footer from '../component/Footer';
 import Navbar from '../component/Navbar';
+import DropdownLang from "./DropdownLang";
 
 function Magazine() {
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
+
+  const handleLanguageSelect = (language) => {
+    setSelectedLanguage(language);
+  
+  };
   return (
    <>
    <Navbar/>
     <div className="container mx-auto p-6">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold">Magazine</h1>
-        <Dropdown />
+        <DropdownLang onSelect={handleLanguageSelect} />
+
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {/* Repeated blocks */}
@@ -21,9 +30,18 @@ function Magazine() {
           <div key={index} className="m-4 p-4 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
             <img className="w-full h-50 object-cover rounded-t-lg" src={img1} alt="error" />
             <p className="mt-4 font-semibold">Science Edition</p>
-            <button className="mt-2 bg-red-500 text-white py-1 px-6 rounded hover:bg-red-600 transition-colors duration-300">
-              Buy
-            </button>
+            <div className=" flex justify-between items-center">
+            <Link
+                  to="/buy"
+                  className="mt-2 bg-red-500 text-white py-1 px-6 rounded hover:bg-red-600 transition-colors duration-300"
+                >
+                  Buy
+                </Link>
+                <Link to="/cart">
+                  
+                  <IoMdCart className=" w-6 h-6" />
+                </Link>
+              </div>
           </div>
         ))}
       </div>

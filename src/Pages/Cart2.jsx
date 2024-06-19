@@ -1,5 +1,5 @@
 
-
+// final section in cart after payment
 
 
 import { GoCircle } from "react-icons/go";
@@ -105,3 +105,86 @@ function Cart2() {
 }
 
 export default Cart2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import { GoCircle } from 'react-icons/go';
+
+// function Cart2({ onPrevious }) {
+//   return (
+//     <div className="flex flex-col min-h-screen">
+//       <main className="flex-1">
+//         {/* Stepper */}
+//         <div className="border-b-2 border-gray-300 px-6 py-4 mb-6">
+//           <ol className="flex justify-between text-sm md:text-base">
+//             <li className="flex items-center">
+//               <span className="mr-2">
+//                 <GoCircle className="text-red-500" />
+//               </span>
+//               <span className="font-semibold text-red-500">Cart</span>
+//             </li>
+//             <li className="flex items-center">
+//               <span className="mr-2">
+//                 <GoCircle className="text-red-500" />
+//               </span>
+//               <span className="font-semibold text-red-500">Checkout</span>
+//             </li>
+//             <li className="flex items-center text-gray-400">
+//               <span className="mr-2">
+//                 <GoCircle className="text-gray-400" />
+//               </span>
+//               <span className="font-semibold">Successful</span>
+//             </li>
+//           </ol>
+//         </div>
+
+//         <div className="container mx-auto px-4 py-8">
+//           {/* Success Message */}
+//           <div className="bg-white shadow-md rounded-lg p-6 mb-6 text-center">
+//             <h1 className="text-4xl font-semibold text-gray-700 mb-4">Payment Successful!</h1>
+//             <p className="text-lg text-gray-600">Thank you for your purchase.</p>
+//           </div>
+
+//           {/* Action Button */}
+//           <div className="flex justify-center items-center mt-8">
+//             <button onClick={onPrevious} className="bg-gray-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none">Back to Checkout</button>
+//           </div>
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+// export default Cart2;
