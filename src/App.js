@@ -13,7 +13,7 @@ import Cart2 from './Pages/Cart2';
 import Cart3 from './Pages/Cart3';
 import Buy from './Pages/Buy';
 
-// import AdminPanel from './admin/AdminPanel';
+import AdminPanel from './admin/AdminPanel';
 
 
 

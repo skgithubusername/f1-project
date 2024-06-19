@@ -3,7 +3,9 @@
 import React, { useEffect, useState } from "react";
 import img1 from '../img/Property 1=Default.png';
 import img2 from '../img/Property 1=Variant2.png';
-import img3 from '../img/Property 1=Variant3.png';
+// import img3 from '../img/Property 1=Variant3.png';
+import img3 from '../img/Vector 2.png';
+
 
 const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
